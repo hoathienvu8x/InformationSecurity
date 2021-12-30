@@ -1,0 +1,51 @@
+Client 3: send id to AS for request
+Client 3: MD5 hash result of 3: edcfae989540fd42e4b8556d5b723bb6
+key-client of 3: ecceae989440fd43
+AS: send key-tgs to TGS: ad31da89bc1089c8
+TGS: TGS recv key-tgs from AS: ad31da89bc1089c8
+TGS: TGS send key-ss to SS: 3b793ed5f785d591
+AS: recv request from client 3
+AS: MD5 hash result of 3: edcfae989540fd42e4b8556d5b723bb6
+key-client of 3: ecceae989440fd43
+AS: key-client-tgs origin text of client 3: 9db3808c4ffbf1e0
+SS: recv key-ss from TGS: 3b793ed5f785d591
+Client 3: recv key-client-tgs ciphertext from AS: ec8b65c655fb24938ae7e5d4402702d4
+AS: send key-client-tgs ciphertext after encrypt to client 3: ec8b65c655fb24938ae7e5d4402702d4
+AS: message b(TGT) origin text of client 3: client id: 3, address: 3, validity: 600, key_client_tgs: 9db3808c4ffbf1e0
+Client 3: key-client-tgs origin text after decrypt: 9db3808c4ffbf1e0
+AS: send message b(TGT) ciphertext of client 3 to client 3: cc60b78b78b006df2f0a5789e1ee8f2e92a115d4cc14d5f7023709d98b714a53
+Client 3: recv message b(TGT) ciphertext from AS: cc60b78b78b006df2f0a5789e1ee8f2e92a115d4cc14d5f7023709d98b714a53
+Client 3: send service ID: 3 to TGS
+Client 3: send message b(TGT) ciphertext to TGS: cc60b78b78b006df2f0a5789e1ee8f2e92a115d4cc14d5f7023709d98b714a53
+Client 3: message d origin text: id: 3, timestamp: 1607752757
+TGS: recv service ID: 3 from client 3
+TGS: recv message b(TGT) ciphertext from client 3: cc60b78b78b006df2f0a5789e1ee8f2e92a115d4cc14d5f7023709d98b714a53
+Client 3: send message d ciphertext to TGS: 41f7beb66a8cc16f31d2c2d9202363a7c714d6b9ebf478da
+TGS: message b(TGT) origin text after decrypt from client 3: client id: 3, address: 3, validity: 600, key_client_tgs: 9db3808c4ffbf1e0
+TGS: recv message d ciphertext from client 3: 41f7beb66a8cc16f31d2c2d9202363a7c714d6b9ebf478da
+TGS: message d origin text from client 3: client id: 3, time: 1607752757
+TGS: send service ID: 3 to client 3
+Client 3: recv service ID: 3 from TGS
+TGS: message e(ST) origin text of client 3: client id: 3, address: 3, validity: 600, key_client_ss: ad4919a1eac22958
+TGS: send message e(ST) ciphertext to client 3: d925b4d1e186a51a69d63770a02d84cab601915414f1f62c1ef6b6c77d99f855
+TGS: key-client-ss origin text of client 3: ad4919a1eac22958
+Client 3: recv ST ciphertext from TGS: d925b4d1e186a51a69d63770a02d84cab601915414f1f62c1ef6b6c77d99f855
+TGS: send key-client-ss ciphertext after encrypt to client 3: 5a9864c428c7bd2fc714d6b9ebf478da
+Client 3: recv key-client-ss ciphertext from TGS: 5a9864c428c7bd2fc714d6b9ebf478da
+SS: recv service ID: 3 from client 3
+SS: recv ST ciphertext from client 3: d925b4d1e186a51a69d63770a02d84cab601915414f1f62c1ef6b6c77d99f855
+Client 3: key-client-ss origin text from TGS: ad4919a1eac22958
+Client 3: send service ID: 3 to SS
+Client 3: send ST ciphertext to SS: d925b4d1e186a51a69d63770a02d84cab601915414f1f62c1ef6b6c77d99f855
+Client 3: message g origin text: id: 3, timestamp: 1607752757
+Client 3: send message g ciphertext to TGS: cbe67b7c189a1d2fb7abf795cad627bdd87af1e2a15a076a
+SS: message e(ST) origin text from client 3: client id: 3, address: 3, validity: 600, key_client_ss: ad4919a1eac22958
+SS: recv message g ciphertext from client 3: cbe67b7c189a1d2fb7abf795cad627bdd87af1e2a15a076a
+SS: message g origin text from client 3: client id: 3, timestamp: 1607752757
+SS: agree to service
+SS: message h origin text to client 3: client id: 3, timestamp: 1607752758
+Client 3: recv message h ciphertext from SS: cbe67b7c189a1d2f8c3e6e7a3579fef7d87af1e2a15a076a
+SS: send message h ciphertext to client 3: cbe67b7c189a1d2f8c3e6e7a3579fef7d87af1e2a15a076a
+SS: start to service to client
+Client 3: message h origin text from SS: client id: 3, timestamp: 1607752758
+Client 3: I will trust SS
